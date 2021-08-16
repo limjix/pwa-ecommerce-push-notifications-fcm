@@ -1,6 +1,7 @@
 <template>
 
-  <h1>Buy My Holiday E-Commerce Platform</h1>
+  <h1>Buy My Holiday E-Commerce Platform V0.04</h1>
+  <div>Token: {{messagingToken}}</div>
 
   <v-container>
     <v-row>
@@ -39,12 +40,16 @@
 </template>
 
 <script>
+  import { mapState } from 'vuex';
 export default {
   name: "Home",
   props: {
   },
   components: {
     //componentName: () => import('@/components/path'),
+  },
+  computed: {
+    ...mapState(["messagingToken"])
   },
   data() {
     return {

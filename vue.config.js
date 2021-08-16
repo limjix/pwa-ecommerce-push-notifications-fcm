@@ -23,11 +23,11 @@ module.exports = {
 
     // configure the workbox plugin
     workboxPluginMode: 'GenerateSW',
-    // workboxOptions: {
-    //   // swSrc is required in InjectManifest mode.
-    //   swSrc: 'src/service-worker.js',
-    //   // ...other Workbox options...
-    // }
+    workboxOptions: {
+      // swSrc is required in InjectManifest mode.
+      // swSrc: 'src/service-worker.js',
+      // ...other Workbox options...
+    }
 
     // appleMobileWebAppCapable: 'yes',
     // appleMobileWebAppStatusBarStyle: 'black',
